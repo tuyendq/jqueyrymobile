@@ -6,7 +6,7 @@ function loadList(){
             var list = document.getElementById("listcountry");
             var data = xhr.responseText;
             var vec = JSON.parse(data);
-            vec.foreach(function(ob){
+            vec.forEach(function(ob){
                 var li = document.createElement("li");
                 var a = document.createElement("a");
                 var text = document.createTextNode(ob.country);
